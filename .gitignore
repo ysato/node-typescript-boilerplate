@@ -1,1 +1,11 @@
+# Dependencies
+node_modules
+
+# Transpiled files
+dist
+
+# JetBrains IDE
 .idea
+
+# Misc
+.DS_Store
