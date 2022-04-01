@@ -9,7 +9,7 @@
     "build:release": "npm run clean && tsc -p tsconfig.release.json",
     "build:watch": "tsc -w -p tsconfig.json",
     "clean": "rimraf coverage dist",
-    "lint": "eslint --format=pretty --cache --max-warnings 0 --ext .ts .",
+    "lint": "eslint --format=pretty --cache --max-warnings 0 --fix --ext .ts .",
     "start": "node dist/src/app.js",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
