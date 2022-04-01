@@ -33,5 +33,14 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^27.1.4",
     "typescript": "^4.6.3"
+  },
+  "suggest": {
+    "@commitlint/{cli,config-conventional}": "Checks if your commit messages meet the conventional commit format",
+    "concurrently": "Run multiple commands concurrently",
+    "dotenv": "Loads environment variables from a .env file",
+    "fast-json-stringify": "faster than JSON.stringify()",
+    "iterare": "Applying multiple transformations to a collection in a single iteration",
+    "nodemon": "Automatically restarting the node application when file changes",
+    "pino": "Very low overhead Node.js logger"
   }
 }
