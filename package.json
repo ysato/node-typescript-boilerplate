@@ -3,17 +3,14 @@
   "version": "0.0.0",
   "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
   "type": "module",
-  "engines": {
-    "node": "14.19.1"
-  },
   "scripts": {
-    "start": "node dist/src/app.js",
-    "clean": "rimraf coverage dist",
     "prebuild": "npm run lint",
     "build": "tsc -p tsconfig.json",
-    "build:watch": "tsc -w -p tsconfig.json",
     "build:release": "npm run clean && tsc -p tsconfig.release.json",
+    "build:watch": "tsc -w -p tsconfig.json",
+    "clean": "rimraf coverage dist",
     "lint": "eslint --cache . --ext .ts",
+    "start": "node dist/src/app.js",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
@@ -34,7 +31,7 @@
     "ts-jest": "^27.1.4",
     "typescript": "^4.6.3"
   },
-  "volta": {
+  "engines": {
     "node": "14.19.1"
   },
   "suggest": {
@@ -45,5 +42,8 @@
     "iterare": "Applying multiple transformations to a collection in a single iteration",
     "nodemon": "Automatically restarting the node application when file changes",
     "pino": "Very low overhead Node.js logger"
+  },
+  "volta": {
+    "node": "14.19.1"
   }
 }
