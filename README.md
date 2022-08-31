@@ -32,6 +32,7 @@ To clone the repository, use the following commands:
 git clone https://github.com/ysato/node-typescript-boilerplate
 cd node-typescript-boilerplate
 npm install
+npm run prepare
 ```
 
 ## Available Scripts
@@ -39,6 +40,7 @@ npm install
 - `start` - run the application within a local,
 - `clean` - remove coverage data, Jest cache and transpiled files,
 - `prebuild` - lint source files and tests before building,
+- `prepare` - install husky,
 - `build` - transpile TypeScript to ES2020,
 - `build:watch` - interactive watch mode to automatically transpile source files,
 - `build:release` - clean and transpile source files for production usage,
